@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>MyPusheenFansite
+    </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(function() {
+            $('#halloween').hover(function() {
+                    $('#halloween').attr('src', 'raw/20231031_110448.jpg');
+
+                }
+
+                function() {
+                    $('#halloween').attr('src', 'raw/20231031_110356.jpg');
+                })
+        })
+
+    </script>
+</head>
+
+<body>
+    <nav>
+        <img src="img/PusheenPawlogo.png" alt="pusheen logo">
+        <h1>MyPusheenFansite</h1>
+        <a href="index2-Zoom-Button-%20Socials-Week6.html">Home</a>
+        <a href="Gallery-Week5.html">Gallery</a>
+        <a href="contact-Week6.html">Contact</a>
+    </nav>
+
+    <header>
+        <h2>Gallery</h2>
+    </header>
+    <section>
+        <h3>Halloween Pusheen Collection</h3>
+
+
+
+
+        <div class="row">
+            <div class="column">
+                <img src="raw/20231031_110937.jpg" alt="Spooks-sheen and Vampire-sheen Vinyl" width=20% onclick="myFunction(this);">
+            </div>
+            <div class="column">
+                <img src="raw/20231031_110720.jpg" alt="Pumkin-sheen Plushie" width=20% onclick="myFunction(this);">
+            </div>
+            <div class="column">
+                <img src="raw/20231031_110448.jpg" alt="Spooks-sheen Plushie" width=20% onclick="myFunction(this);">
+            </div>
+            <div class="column">
+                <img src="raw/20231031_110356.jpg" alt="Bat-sheen Plushie" width=20% onclick="myFunction(this);">
+            </div>
+            <div class="column">
+                <img src="raw/20231031_110246.jpg" alt="Franken-sheen Plushie" width=20% onclick="myFunction(this);">
+            </div>
+        </div>
+
+        <div class="container">
+
+            <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+
+
+            <img id="expandedImg" style="width:50%">
+
+
+            <div id="imgtext"></div>
+
+        </div>
+        <script>
+            function myFunction(imgs) {
+
+                var expandImg = document.getElementById("expandedImg");
+
+                var imgText = document.getElementById("imgtext");
+
+                expandImg.src = imgs.src;
+
+                imgText.innerHTML = imgs.alt;
+
+                expandImg.parentElement.style.display = "block";
+            }
+
+        </script>
+
+
+
+    </section>
+    <footer>
+
+        <a href="https://www.facebook.com/Pusheen/" class="fa fa-facebook"></a>
+        <a href="https://x.com/Pusheen?s=20" class="fa fa-twitter"></a>
+        <a href="https://www.youtube.com/c/PusheenTheCat" class="fa fa-youtube"></a>
+    </footer>
+</body>
+
+</html>
